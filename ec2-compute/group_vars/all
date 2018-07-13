@@ -1,4 +1,4 @@
-c2:
+ec2:
   region: ap-south-1
   security_group: my_custom_security_group
   key: my_cloud_key2
