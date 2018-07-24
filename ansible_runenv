@@ -1,4 +1,7 @@
 --installing ansible
 #pip install ansible
----hosts/inventory file location
-#/etc/ansible/hosts
+#/etc/ansible/ansible.cfg #ansible configuration file
+#/etc/ansible/hosts  #hosts/inventory file location
+#ansible-playbook file.yml #command to run the playbook:
+#ansible --version  #Command to check ansible version
+
