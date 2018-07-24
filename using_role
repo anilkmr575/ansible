@@ -1,1 +1,8 @@
-
+ROles are next level of abstraction of ansbile playbook
+Role terminology
+#files  #contains regular files those needs to copied to the target hosts
+#handlers #event handler
+#meta #role dependencies
+#templetes #similar to files but it contains dynamic data
+#tasks #playbook task
+#vars/group_vars #variable definations
