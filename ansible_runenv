@@ -1,0 +1,4 @@
+--installing ansible
+#pip install ansible
+---hosts/inventory file location
+#/etc/ansible/hosts
