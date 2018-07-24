@@ -1,0 +1,9 @@
+---ansible AD-HOC command
+#are simple one line cmd to perform task. that you might type in to do something really quick but don't want to save for later
+#syntax for ad-hoc commnad
+#ansible all -s-n shell-a'uptime'  (all refer to all host) uptime of all the machines
+#ansible all -s-n shell-a'date' -DATE of all the machines
+#ansible all -s -n shell-a'cat/etc/redhat-release'- redhat release of the all the machines
+#ansible all -s-n shell-a'mount' -Kind of mount on the machines
+#ansible all -s-n shell-a'service sshd status' -check the service status on the machines.
+#
