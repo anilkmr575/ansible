@@ -6,4 +6,4 @@
 #ansible all -s -n shell-a'cat/etc/redhat-release'- redhat release of the all the machines
 #ansible all -s-n shell-a'mount' -Kind of mount on the machines
 #ansible all -s-n shell-a'service sshd status' -check the service status on the machines.
-#
+#ansible -m ping 'test-servers' # to ping server in test-servers group
