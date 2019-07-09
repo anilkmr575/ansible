@@ -10,7 +10,16 @@
 #ansible-playbook <playbookname.yml> --syntax.check
 ---to run role
 #ansible-playbook <playbookname.yml>
+Using SSH Password:-
 ---Prompted ssh password authentication
 In order to do this, you need to install the additional package called 'sshpass' on the 'ansible-node'..
 ---Now run the ad-hoc command and add the '--ask-pass' option to the end.
-#ansible hakase-testing -m ping --ask-pass
+#ansible web-servers -m ping --ask-pass
+Privilege Escalation:-
+---If we want to run the ad-hoc command as a non-root user, we can use the 
+'--become' option to get the root privileges and the '-K' option to prompt the password.
+#ansible web-servers -m shell -a 'fdisk -l' -u hakase --become -K
+Upload File to Host:-
+#ansible web-servers -m copy -a 'src=/home/hakase/hakase-sudo.conf dest=/etc/sudoers.d/hakase owner=root mode=0644' -u hakase --become -K
+Download File from the Host:-
+ansible provision -m fetch -a 'src=/etc/sudoers.d/hakase dest=/home/hakase/backup/hakase-sudoers flat=yes'
